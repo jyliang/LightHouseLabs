@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6ZQ-4z-avI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="53h-Fs-2sp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6ZQ-4z-avI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xwz-1d-0JK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gh2-F5-rIc" kind="relationship" relationship="rootViewController" id="ZNa-b3-Rvh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IkY-9V-4MJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="400"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="bS3-Ap-7xI">
+            <objects>
+                <tableViewController id="gh2-F5-rIc" customClass="TableViewController" customModule="TimeProfiler" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="28" sectionFooterHeight="28" id="KNX-av-G9r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="121" id="Ilu-Lr-GrM" customClass="TableViewCell" customModule="TimeProfiler" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="121"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ilu-Lr-GrM" id="rsE-3c-m3h">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="120.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="hS3-F7-Ssw">
+                                            <rect key="frame" x="0.0" y="0.0" width="156" height="120.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="156" id="i8C-y2-h4V"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCI-ph-CG3">
+                                            <rect key="frame" x="164" y="50" width="428" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cCI-ph-CG3" firstAttribute="trailing" secondItem="rsE-3c-m3h" secondAttribute="trailingMargin" id="IuJ-dS-aWF"/>
+                                        <constraint firstItem="cCI-ph-CG3" firstAttribute="centerY" secondItem="rsE-3c-m3h" secondAttribute="centerY" id="J6d-0i-K7b"/>
+                                        <constraint firstItem="hS3-F7-Ssw" firstAttribute="leading" secondItem="rsE-3c-m3h" secondAttribute="leading" id="WP1-Bd-Euz"/>
+                                        <constraint firstAttribute="bottom" secondItem="hS3-F7-Ssw" secondAttribute="bottom" id="dho-Dv-BKr"/>
+                                        <constraint firstItem="cCI-ph-CG3" firstAttribute="leading" secondItem="hS3-F7-Ssw" secondAttribute="trailing" constant="8" id="sRc-Gc-jsp"/>
+                                        <constraint firstItem="hS3-F7-Ssw" firstAttribute="top" secondItem="rsE-3c-m3h" secondAttribute="top" id="zhC-G8-sf2"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgView" destination="hS3-F7-Ssw" id="TA4-i9-fFQ"/>
+                                    <outlet property="label" destination="cCI-ph-CG3" id="xJJ-MK-ob3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gh2-F5-rIc" id="ykM-0l-9cE"/>
+                            <outlet property="delegate" destination="gh2-F5-rIc" id="Nxc-Cs-lTE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="npl-Kz-N8a"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOW-Po-1Z6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224" y="391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1024" height="768"/>
+    </resources>
+</document>
