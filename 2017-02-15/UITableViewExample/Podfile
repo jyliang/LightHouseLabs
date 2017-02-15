@@ -1,0 +1,9 @@
+
+platform :ios, '10.0'
+use_frameworks!
+
+project 'UITableViewExample.xcodeproj'
+
+target 'UITableViewExample' do
+	pod 'SDWebImage'
+end
