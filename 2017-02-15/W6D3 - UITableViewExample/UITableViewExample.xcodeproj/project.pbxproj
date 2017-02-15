@@ -13,6 +13,9 @@
 		4F12CB3D1E54A426009FA198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F12CB3B1E54A426009FA198 /* Main.storyboard */; };
 		4F12CB3F1E54A426009FA198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F12CB3E1E54A426009FA198 /* Assets.xcassets */; };
 		4F12CB421E54A426009FA198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F12CB401E54A426009FA198 /* LaunchScreen.storyboard */; };
+		4F12CB4A1E54AB7B009FA198 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CB491E54AB7B009FA198 /* TableViewController.swift */; };
+		4F12CB6B1E54ADA3009FA198 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F12CB691E54ADA3009FA198 /* TableViewCell.swift */; };
+		4F12CB6C1E54ADA3009FA198 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F12CB6A1E54ADA3009FA198 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		4F12CB3E1E54A426009FA198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F12CB411E54A426009FA198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F12CB431E54A426009FA198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F12CB491E54AB7B009FA198 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4F12CB691E54ADA3009FA198 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4F12CB6A1E54ADA3009FA198 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		EAFC9640F92DE675FF6AF78F /* Pods_UITableViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITableViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +77,9 @@
 			children = (
 				4F12CB371E54A426009FA198 /* AppDelegate.swift */,
 				4F12CB391E54A426009FA198 /* ViewController.swift */,
+				4F12CB491E54AB7B009FA198 /* TableViewController.swift */,
+				4F12CB691E54ADA3009FA198 /* TableViewCell.swift */,
+				4F12CB6A1E54ADA3009FA198 /* TableViewCell.xib */,
 				4F12CB3B1E54A426009FA198 /* Main.storyboard */,
 				4F12CB3E1E54A426009FA198 /* Assets.xcassets */,
 				4F12CB401E54A426009FA198 /* LaunchScreen.storyboard */,
@@ -151,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F12CB421E54A426009FA198 /* LaunchScreen.storyboard in Resources */,
+				4F12CB6C1E54ADA3009FA198 /* TableViewCell.xib in Resources */,
 				4F12CB3F1E54A426009FA198 /* Assets.xcassets in Resources */,
 				4F12CB3D1E54A426009FA198 /* Main.storyboard in Resources */,
 			);
@@ -186,7 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8FF4CA88E778CA7AFCCEAB45 /* [CP] Embed Pods Frameworks */ = {
@@ -212,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F12CB3A1E54A426009FA198 /* ViewController.swift in Sources */,
+				4F12CB6B1E54ADA3009FA198 /* TableViewCell.swift in Sources */,
+				4F12CB4A1E54AB7B009FA198 /* TableViewController.swift in Sources */,
 				4F12CB381E54A426009FA198 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +386,7 @@
 				4F12CB481E54A426009FA198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
