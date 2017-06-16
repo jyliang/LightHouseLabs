@@ -1,0 +1,19 @@
+PODS:
+  - RxCocoa (3.5.0):
+    - RxSwift (~> 3.4)
+  - RxSwift (3.5.0)
+  - SteviaLayout (3.2.0)
+
+DEPENDENCIES:
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+  - SteviaLayout
+
+SPEC CHECKSUMS:
+  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  SteviaLayout: 85c405f118ddb8637d0674ef6a79eefb792bf90b
+
+PODFILE CHECKSUM: e6492a0143cdbb0a9ce81d84f940013f27a2a426
+
+COCOAPODS: 1.2.1
