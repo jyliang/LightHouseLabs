@@ -8,6 +8,7 @@
 
 import UIKit
 import Stevia
+import RxSwift
 
 class FirstViewController: UIViewController {
 
@@ -15,8 +16,20 @@ class FirstViewController: UIViewController {
   let password = UITextField()
   let login = UIButton()
   
+  let count = Variable<Int>(0)
+  var disposeBag = DisposeBag()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    count.asObservable()
+      .throttle(1, scheduler: MainScheduler.instance)
+      .subscribe {
+      [weak self]
+      (count) in
+      self?.email.text = "\(count)"
+    }.addDisposableTo(disposeBag)
+    
     
     self.view.backgroundColor = .blue
     
@@ -60,6 +73,11 @@ class FirstViewController: UIViewController {
   
   func loginTapped() {
     print("login tapped")
+    count.value = count.value + 1
+    
+    if count.value > 100 {
+      disposeBag = DisposeBag()
+    }
   }
 
   override func didReceiveMemoryWarning() {
