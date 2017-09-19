@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>W8D3ActionExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>W8D3Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -22,6 +27,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4FD62D641F64802100A2D063</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4FFBE2ED1E67488E00E2C52A</key>
 		<dict>
 			<key>primary</key>
