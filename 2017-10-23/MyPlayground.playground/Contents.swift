@@ -310,8 +310,8 @@ func generateRandomIntegers(count : Int, maxNumber : UInt32) -> [Int]
   return numbers
 }
 
-var inputNumbers = [1,5,3,2,9,10,4,2,3]
-//var inputNumbers = generateRandomIntegers(count: 10, maxNumber: 70)
+//var inputNumbers = [1,5,3,2,9,10,4,2,3]
+var inputNumbers = generateRandomIntegers(count: 100, maxNumber: 70)
 print("inputNumbers: \(inputNumbers)")
 
 //Problem 1: Time complexity
@@ -330,60 +330,64 @@ print("P1: \(findSumOfArray(numbers: inputNumbers))")
 
 //
 ////Problem 2: Nested time complexity
-//var inputLetters = ["D", "A", "F", "X", "J", "S", "F"] //n
-//var inputLetters2 = ["T", "U", "V"] //m
-//func findPairsOfLetters(letters : [String], letters2 : [String]) -> [[String]]
-//{
-//    //Init output array
-//    var letterPairs = [[String]]()
-//
-//    //First letter in first array
-//    for letter1 in letters
-//    {
-//        for letter2 in letters2
-//        {
-//            if (letter1 != letter2)
-//            {
-//                let letterPair = [letter1, letter2]
-//                letterPairs.append(letterPair)
-//            }
-//        }
-//    }
-//
-//    //First letter in second array
-//    for letter1 in letters2
-//    {
-//        for letter2 in letters
-//        {
-//            if (letter1 != letter2)
-//            {
-//                let letterPair = [letter1, letter2]
-//                letterPairs.append(letterPair)
-//            }
-//        }
-//    }
-//
-//    return letterPairs
-//}
+var inputLetters = ["D", "A", "F", "X", "J", "S", "F"] //n
+var inputLetters2 = ["T", "U", "V"] //m
+
+//O(n^2)
+//O(n * n)
+//O(n * m)
+func findPairsOfLetters(letters : [String], letters2 : [String]) -> [[String]]
+{
+    //Init output array
+    var letterPairs = [[String]]()
+
+    //First letter in first array
+    for letter1 in letters
+    {
+        for letter2 in letters2
+        {
+            if (letter1 != letter2)
+            {
+                let letterPair = [letter1, letter2]
+                letterPairs.append(letterPair)
+            }
+        }
+    }
+
+    //First letter in second array
+    for letter1 in letters2
+    {
+        for letter2 in letters
+        {
+            if (letter1 != letter2)
+            {
+                let letterPair = [letter1, letter2]
+                letterPairs.append(letterPair)
+            }
+        }
+    }
+
+    return letterPairs
+}
 //print("P2: \(findPairsOfLetters(letters: inputLetters))")
 //
 //
 //
-////Problem 3: Highest number
-//func findHighestNumber(numbers : [Int]) -> Int
-//{
-//    var highestNumber = Int.min
-//    for number in numbers
-//    {
-//        if (number > highestNumber)
-//        {
-//            highestNumber = number
-//        }
-//    }
-//
-//    return highestNumber
-//}
-//print("P3: \(findHighestNumber(numbers: inputNumbers))")
+//Problem 3: Highest number
+func findHighestNumber(numbers : [Int]) -> Int
+{
+    var highestNumber = Int.min
+    for number in numbers
+    {
+        if (number > highestNumber)
+        {
+            highestNumber = number
+        }
+    }
+
+    return highestNumber
+}
+print("P3: \(findHighestNumber(numbers: inputNumbers))")
 //
 //
 //
@@ -412,9 +416,9 @@ func findUniqueNumbersNaive(numbers : [Int]) -> [Int]
   
   return uniqueNumbers
 }
-//Duration.startMeasurement(name: "P4")
-//print("P4: \(findUniqueNumbersNaive(numbers: inputNumbers))")
-//Duration.stopMeasurement()
+Duration.startMeasurement(name: "P4")
+print("P4: \(findUniqueNumbersNaive(numbers: inputNumbers))")
+Duration.stopMeasurement()
 
 //Problem 4b: Unique values
 func findUniqueNumbers(numbers : [Int]) -> [Int]
@@ -458,6 +462,11 @@ print("P5: \(findLargestNumber(numbers: inputNumbers))")
 Duration.stopMeasurement()
 //
 
+// 1! = 1
+// n
+// n! = n * facgorial(n - 1)
+// 2! =? 2 * factorial(2 - 1)
+
 func factorial(_ N: Int) -> Int {
   if N == 1 {
     return 1
@@ -466,4 +475,4 @@ func factorial(_ N: Int) -> Int {
   }
 }
 
-print("Factorial: \(factorial(3))")
+print("Factorial: \(factorial(30))")
