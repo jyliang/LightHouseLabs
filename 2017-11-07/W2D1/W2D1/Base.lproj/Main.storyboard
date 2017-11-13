@@ -6,10 +6,56 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="h9Q-6i-ZmC">
+            <objects>
+                <tableViewController id="Fku-Kx-5NV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="imZ-tD-DVh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="awx-vb-Tyo">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="awx-vb-Tyo" id="xUm-4E-oeC">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fku-Kx-5NV" id="whh-Yj-jnB"/>
+                            <outlet property="delegate" destination="Fku-Kx-5NV" id="K5O-iQ-dqe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Tcq-yE-cOG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7W-vj-wHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="-689"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kdz-dq-Idh">
+            <objects>
+                <navigationController id="RIV-7E-Vgg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4NT-vy-zXm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fku-Kx-5NV" kind="relationship" relationship="rootViewController" id="ij9-jY-g8j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCr-iu-3ZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-429" y="-689"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -36,13 +82,19 @@
                                     <action selector="changeName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBR-ek-U5b"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-38-tk8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eAw-38-tk8">
                                 <rect key="frame" x="67" y="235" width="240" height="228"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="228" id="B0v-ha-27h"/>
+                                    <constraint firstAttribute="width" constant="240" id="TCc-PD-0Ja"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfQ-I7-eQN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfQ-I7-eQN">
                                 <rect key="frame" x="142" y="487" width="90" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cvk-VU-Ymi"/>
+                                    <constraint firstAttribute="width" constant="90" id="lj3-O5-3fU"/>
+                                </constraints>
                                 <state key="normal" title="Import Photo"/>
                                 <connections>
                                     <action selector="importPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbQ-db-Nkt"/>
@@ -51,8 +103,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eAw-38-tk8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="0jB-gg-nWC"/>
+                            <constraint firstItem="xfQ-I7-eQN" firstAttribute="top" secondItem="eAw-38-tk8" secondAttribute="bottom" constant="24" id="3Zm-Cv-Ivf"/>
                             <constraint firstItem="Hfu-wn-tfu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="Gq9-ps-OI6"/>
                             <constraint firstItem="Hfu-wn-tfu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dFS-GL-lg4"/>
+                            <constraint firstItem="xfQ-I7-eQN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lGY-IH-dKW"/>
+                            <constraint firstItem="eAw-38-tk8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="215" id="tF5-7a-gp4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
