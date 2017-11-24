@@ -13,6 +13,9 @@ class ViewController: UIViewController, UITableViewDataSource {
   var stations : [[String:Any]] = []
   let tableView = UITableView()
   
+  let posts : [Post] = []
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     self.view.addSubview(self.tableView)
