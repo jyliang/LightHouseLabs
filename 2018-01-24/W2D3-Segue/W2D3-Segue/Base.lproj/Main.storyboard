@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UPt-qr-J8A">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9n3-2K-Tlp">
+            <objects>
+                <navigationController id="UPt-qr-J8A" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e25-Lv-c0a">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oN6-bh-dk3" kind="relationship" relationship="rootViewController" id="Hnx-iJ-Da9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvs-RI-qEE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nZG-al-xQL">
+            <objects>
+                <viewController id="oN6-bh-dk3" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bRA-4h-Jh2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIQ-Fh-cfB">
+                                <rect key="frame" x="156" y="318" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Me"/>
+                                <connections>
+                                    <segue destination="14i-cE-7rU" kind="show" identifier="showlabel" id="qG2-c9-PqE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtR-UM-Q8Q">
+                                <rect key="frame" x="139" y="223" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMF-Ec-RQx">
+                                <rect key="frame" x="163" y="382" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BREAK"/>
+                                <connections>
+                                    <segue destination="tkH-3c-xQc" kind="show" id="slO-Ri-DzF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyT-gN-S24">
+                                <rect key="frame" x="251" y="318" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Me 2"/>
+                                <connections>
+                                    <action selector="showLargeLabel:" destination="oN6-bh-dk3" eventType="touchUpInside" id="hO8-dz-UuL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mai-10-qaI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dx4-Nk-6l4"/>
+                    <connections>
+                        <outlet property="textField" destination="rtR-UM-Q8Q" id="uG0-Th-hkg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ael-75-QHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="141"/>
+        </scene>
+        <!--Label View Controller-->
+        <scene sceneID="TZK-7R-FRi">
+            <objects>
+                <viewController id="14i-cE-7rU" customClass="LabelViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4WB-Ka-HJE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxa-L8-KAf">
+                                <rect key="frame" x="16" y="64" width="343" height="583"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bxa-L8-KAf" firstAttribute="leading" secondItem="ICu-ZU-PsK" secondAttribute="leading" constant="16" id="75c-FP-VIi"/>
+                            <constraint firstItem="ICu-ZU-PsK" firstAttribute="bottom" secondItem="bxa-L8-KAf" secondAttribute="bottom" constant="20" id="7AK-Ux-I4B"/>
+                            <constraint firstItem="ICu-ZU-PsK" firstAttribute="trailing" secondItem="bxa-L8-KAf" secondAttribute="trailing" constant="16" id="RcK-aB-m8G"/>
+                            <constraint firstItem="bxa-L8-KAf" firstAttribute="top" secondItem="ICu-ZU-PsK" secondAttribute="top" id="em7-nK-LJG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ICu-ZU-PsK"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="bxa-L8-KAf" id="5ne-y0-0Jx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPk-gF-gJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1399.2" y="139.880059970015"/>
+        </scene>
+        <!--BREAK-->
+        <scene sceneID="0IV-O0-rZP">
+            <objects>
+                <viewController title="BREAK" id="tkH-3c-xQc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWQ-h3-N5F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UJz-Ef-xaY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AC2-bh-EF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1399" y="913"/>
+        </scene>
+    </scenes>
+</document>
