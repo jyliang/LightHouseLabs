@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34D8DF03DFB989E6717781CD /* Pods_EpicAppSiriExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C5C3EDFAA3BEACD2217614 /* Pods_EpicAppSiriExtensionUI.framework */; };
+		4F010F65205806C9004B27DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F010F64205806C9004B27DA /* AppDelegate.swift */; };
+		4F010F67205806C9004B27DA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F010F66205806C9004B27DA /* MasterViewController.swift */; };
+		4F010F69205806C9004B27DA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F010F68205806C9004B27DA /* DetailViewController.swift */; };
+		4F010F6C205806C9004B27DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F010F6A205806C9004B27DA /* Main.storyboard */; };
+		4F010F6E205806C9004B27DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F010F6D205806C9004B27DA /* Assets.xcassets */; };
+		4F010F71205806C9004B27DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F010F6F205806C9004B27DA /* LaunchScreen.storyboard */; };
+		4F010F7F205807E0004B27DA /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F010F7E205807E0004B27DA /* IntentHandler.swift */; };
+		4F010F88205807E0004B27DA /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F010F87205807E0004B27DA /* IntentsUI.framework */; };
+		4F010F8B205807E0004B27DA /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F010F8A205807E0004B27DA /* IntentViewController.swift */; };
+		4F010F8E205807E0004B27DA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F010F8C205807E0004B27DA /* MainInterface.storyboard */; };
+		4F010F92205807E0004B27DA /* EpicAppSiriExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4F010F85205807E0004B27DA /* EpicAppSiriExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F010F95205807E0004B27DA /* EpicAppSiriExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4F010F7C205807E0004B27DA /* EpicAppSiriExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4F010F9F20581E7F004B27DA /* fruit_toggle.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F010F9E20581E7F004B27DA /* fruit_toggle.json */; };
+		4F010FA120581FFB004B27DA /* toggle_switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F010FA020581FFB004B27DA /* toggle_switch.json */; };
+		4F010FA32058222E004B27DA /* switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F010FA22058222E004B27DA /* switch.json */; };
+		934A09E4BF691B93C818F93D /* Pods_EpicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBA52FE5EDADCF9178D25EE /* Pods_EpicApp.framework */; };
+		BAC326E496095227975909FD /* Pods_EpicAppSiriExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29257E0499E711BC1F9D774B /* Pods_EpicAppSiriExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F010F90205807E0004B27DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F010F59205806C9004B27DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F010F84205807E0004B27DA;
+			remoteInfo = EpicAppSiriExtensionUI;
+		};
+		4F010F93205807E0004B27DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F010F59205806C9004B27DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F010F7B205807E0004B27DA;
+			remoteInfo = EpicAppSiriExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F010F9C205807E0004B27DA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4F010F95205807E0004B27DA /* EpicAppSiriExtension.appex in Embed App Extensions */,
+				4F010F92205807E0004B27DA /* EpicAppSiriExtensionUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		042A4DDF014FF73CC274DB7F /* Pods-EpicAppSiriExtensionUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicAppSiriExtensionUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpicAppSiriExtensionUI/Pods-EpicAppSiriExtensionUI.debug.xcconfig"; sourceTree = "<group>"; };
+		0E5E11865FE1D33CA274FA8F /* Pods-EpicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpicApp/Pods-EpicApp.debug.xcconfig"; sourceTree = "<group>"; };
+		29257E0499E711BC1F9D774B /* Pods_EpicAppSiriExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpicAppSiriExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F010F61205806C9004B27DA /* EpicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F010F64205806C9004B27DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F010F66205806C9004B27DA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		4F010F68205806C9004B27DA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4F010F6B205806C9004B27DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F010F6D205806C9004B27DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F010F70205806C9004B27DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F010F72205806C9004B27DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F010F7C205807E0004B27DA /* EpicAppSiriExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EpicAppSiriExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F010F7E205807E0004B27DA /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		4F010F80205807E0004B27DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F010F85205807E0004B27DA /* EpicAppSiriExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EpicAppSiriExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F010F87205807E0004B27DA /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		4F010F8A205807E0004B27DA /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		4F010F8D205807E0004B27DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4F010F8F205807E0004B27DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F010F9D205809B6004B27DA /* EpicApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpicApp.entitlements; sourceTree = "<group>"; };
+		4F010F9E20581E7F004B27DA /* fruit_toggle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fruit_toggle.json; sourceTree = "<group>"; };
+		4F010FA020581FFB004B27DA /* toggle_switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = toggle_switch.json; sourceTree = "<group>"; };
+		4F010FA22058222E004B27DA /* switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = switch.json; sourceTree = "<group>"; };
+		58B740B07EEE068DDBAB8542 /* Pods-EpicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpicApp/Pods-EpicApp.release.xcconfig"; sourceTree = "<group>"; };
+		68B0706D464BD5ED4C789C0C /* Pods-EpicAppSiriExtensionUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicAppSiriExtensionUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpicAppSiriExtensionUI/Pods-EpicAppSiriExtensionUI.release.xcconfig"; sourceTree = "<group>"; };
+		6CE1781380DC252A8D760120 /* Pods-EpicAppSiriExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicAppSiriExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpicAppSiriExtension/Pods-EpicAppSiriExtension.release.xcconfig"; sourceTree = "<group>"; };
+		ABBA52FE5EDADCF9178D25EE /* Pods_EpicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C5C3EDFAA3BEACD2217614 /* Pods_EpicAppSiriExtensionUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpicAppSiriExtensionUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F46F5284AB31A19B67CEDBF3 /* Pods-EpicAppSiriExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpicAppSiriExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpicAppSiriExtension/Pods-EpicAppSiriExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F010F5E205806C9004B27DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934A09E4BF691B93C818F93D /* Pods_EpicApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F010F79205807E0004B27DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC326E496095227975909FD /* Pods_EpicAppSiriExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F010F82205807E0004B27DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F010F88205807E0004B27DA /* IntentsUI.framework in Frameworks */,
+				34D8DF03DFB989E6717781CD /* Pods_EpicAppSiriExtensionUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E90BAA4FCAFB3F06B4075F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E5E11865FE1D33CA274FA8F /* Pods-EpicApp.debug.xcconfig */,
+				58B740B07EEE068DDBAB8542 /* Pods-EpicApp.release.xcconfig */,
+				F46F5284AB31A19B67CEDBF3 /* Pods-EpicAppSiriExtension.debug.xcconfig */,
+				6CE1781380DC252A8D760120 /* Pods-EpicAppSiriExtension.release.xcconfig */,
+				042A4DDF014FF73CC274DB7F /* Pods-EpicAppSiriExtensionUI.debug.xcconfig */,
+				68B0706D464BD5ED4C789C0C /* Pods-EpicAppSiriExtensionUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F010F58205806C9004B27DA = {
+			isa = PBXGroup;
+			children = (
+				4F010F63205806C9004B27DA /* EpicApp */,
+				4F010F7D205807E0004B27DA /* EpicAppSiriExtension */,
+				4F010F89205807E0004B27DA /* EpicAppSiriExtensionUI */,
+				4F010F86205807E0004B27DA /* Frameworks */,
+				4F010F62205806C9004B27DA /* Products */,
+				4E90BAA4FCAFB3F06B4075F4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4F010F62205806C9004B27DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F010F61205806C9004B27DA /* EpicApp.app */,
+				4F010F7C205807E0004B27DA /* EpicAppSiriExtension.appex */,
+				4F010F85205807E0004B27DA /* EpicAppSiriExtensionUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F010F63205806C9004B27DA /* EpicApp */ = {
+			isa = PBXGroup;
+			children = (
+				4F010F9E20581E7F004B27DA /* fruit_toggle.json */,
+				4F010FA22058222E004B27DA /* switch.json */,
+				4F010FA020581FFB004B27DA /* toggle_switch.json */,
+				4F010F9D205809B6004B27DA /* EpicApp.entitlements */,
+				4F010F64205806C9004B27DA /* AppDelegate.swift */,
+				4F010F66205806C9004B27DA /* MasterViewController.swift */,
+				4F010F68205806C9004B27DA /* DetailViewController.swift */,
+				4F010F6A205806C9004B27DA /* Main.storyboard */,
+				4F010F6D205806C9004B27DA /* Assets.xcassets */,
+				4F010F6F205806C9004B27DA /* LaunchScreen.storyboard */,
+				4F010F72205806C9004B27DA /* Info.plist */,
+			);
+			path = EpicApp;
+			sourceTree = "<group>";
+		};
+		4F010F7D205807E0004B27DA /* EpicAppSiriExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4F010F7E205807E0004B27DA /* IntentHandler.swift */,
+				4F010F80205807E0004B27DA /* Info.plist */,
+			);
+			path = EpicAppSiriExtension;
+			sourceTree = "<group>";
+		};
+		4F010F86205807E0004B27DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F010F87205807E0004B27DA /* IntentsUI.framework */,
+				ABBA52FE5EDADCF9178D25EE /* Pods_EpicApp.framework */,
+				29257E0499E711BC1F9D774B /* Pods_EpicAppSiriExtension.framework */,
+				E5C5C3EDFAA3BEACD2217614 /* Pods_EpicAppSiriExtensionUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F010F89205807E0004B27DA /* EpicAppSiriExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				4F010F8A205807E0004B27DA /* IntentViewController.swift */,
+				4F010F8C205807E0004B27DA /* MainInterface.storyboard */,
+				4F010F8F205807E0004B27DA /* Info.plist */,
+			);
+			path = EpicAppSiriExtensionUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F010F60205806C9004B27DA /* EpicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F010F75205806C9004B27DA /* Build configuration list for PBXNativeTarget "EpicApp" */;
+			buildPhases = (
+				14F87026831BF2CEF3D6B20A /* [CP] Check Pods Manifest.lock */,
+				4F010F5D205806C9004B27DA /* Sources */,
+				4F010F5E205806C9004B27DA /* Frameworks */,
+				4F010F5F205806C9004B27DA /* Resources */,
+				4F010F9C205807E0004B27DA /* Embed App Extensions */,
+				C5645168C24EC97B07770CD2 /* [CP] Embed Pods Frameworks */,
+				F4B98B82493B0ADA5722EB90 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F010F91205807E0004B27DA /* PBXTargetDependency */,
+				4F010F94205807E0004B27DA /* PBXTargetDependency */,
+			);
+			name = EpicApp;
+			productName = EpicApp;
+			productReference = 4F010F61205806C9004B27DA /* EpicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F010F7B205807E0004B27DA /* EpicAppSiriExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F010F99205807E0004B27DA /* Build configuration list for PBXNativeTarget "EpicAppSiriExtension" */;
+			buildPhases = (
+				5C795B9A8FEB38D245CA7E30 /* [CP] Check Pods Manifest.lock */,
+				4F010F78205807E0004B27DA /* Sources */,
+				4F010F79205807E0004B27DA /* Frameworks */,
+				4F010F7A205807E0004B27DA /* Resources */,
+				1714DB99BEEB1C7A6CE18B81 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpicAppSiriExtension;
+			productName = EpicAppSiriExtension;
+			productReference = 4F010F7C205807E0004B27DA /* EpicAppSiriExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4F010F84205807E0004B27DA /* EpicAppSiriExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F010F96205807E0004B27DA /* Build configuration list for PBXNativeTarget "EpicAppSiriExtensionUI" */;
+			buildPhases = (
+				B0ACCCF610AB9B4ADC9E6B9B /* [CP] Check Pods Manifest.lock */,
+				4F010F81205807E0004B27DA /* Sources */,
+				4F010F82205807E0004B27DA /* Frameworks */,
+				4F010F83205807E0004B27DA /* Resources */,
+				3882727BD4765C67A72C6DD1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpicAppSiriExtensionUI;
+			productName = EpicAppSiriExtensionUI;
+			productReference = 4F010F85205807E0004B27DA /* EpicAppSiriExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F010F59205806C9004B27DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = jasonliang;
+				TargetAttributes = {
+					4F010F60205806C9004B27DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					4F010F7B205807E0004B27DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4F010F84205807E0004B27DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4F010F5C205806C9004B27DA /* Build configuration list for PBXProject "EpicApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F010F58205806C9004B27DA;
+			productRefGroup = 4F010F62205806C9004B27DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F010F60205806C9004B27DA /* EpicApp */,
+				4F010F7B205807E0004B27DA /* EpicAppSiriExtension */,
+				4F010F84205807E0004B27DA /* EpicAppSiriExtensionUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F010F5F205806C9004B27DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F010F9F20581E7F004B27DA /* fruit_toggle.json in Resources */,
+				4F010F71205806C9004B27DA /* LaunchScreen.storyboard in Resources */,
+				4F010FA120581FFB004B27DA /* toggle_switch.json in Resources */,
+				4F010FA32058222E004B27DA /* switch.json in Resources */,
+				4F010F6E205806C9004B27DA /* Assets.xcassets in Resources */,
+				4F010F6C205806C9004B27DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F010F7A205807E0004B27DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F010F83205807E0004B27DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F010F8E205807E0004B27DA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F87026831BF2CEF3D6B20A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EpicApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1714DB99BEEB1C7A6CE18B81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicAppSiriExtension/Pods-EpicAppSiriExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3882727BD4765C67A72C6DD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicAppSiriExtensionUI/Pods-EpicAppSiriExtensionUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C795B9A8FEB38D245CA7E30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EpicAppSiriExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0ACCCF610AB9B4ADC9E6B9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EpicAppSiriExtensionUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5645168C24EC97B07770CD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EpicApp/Pods-EpicApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicApp/Pods-EpicApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B98B82493B0ADA5722EB90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpicApp/Pods-EpicApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F010F5D205806C9004B27DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F010F69205806C9004B27DA /* DetailViewController.swift in Sources */,
+				4F010F67205806C9004B27DA /* MasterViewController.swift in Sources */,
+				4F010F65205806C9004B27DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F010F78205807E0004B27DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F010F7F205807E0004B27DA /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F010F81205807E0004B27DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F010F8B205807E0004B27DA /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F010F91205807E0004B27DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F010F84205807E0004B27DA /* EpicAppSiriExtensionUI */;
+			targetProxy = 4F010F90205807E0004B27DA /* PBXContainerItemProxy */;
+		};
+		4F010F94205807E0004B27DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F010F7B205807E0004B27DA /* EpicAppSiriExtension */;
+			targetProxy = 4F010F93205807E0004B27DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F010F6A205806C9004B27DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F010F6B205806C9004B27DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F010F6F205806C9004B27DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F010F70205806C9004B27DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4F010F8C205807E0004B27DA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F010F8D205807E0004B27DA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F010F73205806C9004B27DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F010F74205806C9004B27DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F010F76205806C9004B27DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5E11865FE1D33CA274FA8F /* Pods-EpicApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EpicApp/EpicApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U36336MP79;
+				INFOPLIST_FILE = EpicApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonliang.EpicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F010F77205806C9004B27DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B740B07EEE068DDBAB8542 /* Pods-EpicApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EpicApp/EpicApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U36336MP79;
+				INFOPLIST_FILE = EpicApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonliang.EpicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F010F97205807E0004B27DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042A4DDF014FF73CC274DB7F /* Pods-EpicAppSiriExtensionUI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U36336MP79;
+				INFOPLIST_FILE = EpicAppSiriExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonliang.EpicApp.EpicAppSiriExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F010F98205807E0004B27DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68B0706D464BD5ED4C789C0C /* Pods-EpicAppSiriExtensionUI.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U36336MP79;
+				INFOPLIST_FILE = EpicAppSiriExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonliang.EpicApp.EpicAppSiriExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F010F9A205807E0004B27DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46F5284AB31A19B67CEDBF3 /* Pods-EpicAppSiriExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U36336MP79;
+				INFOPLIST_FILE = EpicAppSiriExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonliang.EpicApp.EpicAppSiriExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F010F9B205807E0004B27DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE1781380DC252A8D760120 /* Pods-EpicAppSiriExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U36336MP79;
+				INFOPLIST_FILE = EpicAppSiriExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonliang.EpicApp.EpicAppSiriExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F010F5C205806C9004B27DA /* Build configuration list for PBXProject "EpicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F010F73205806C9004B27DA /* Debug */,
+				4F010F74205806C9004B27DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F010F75205806C9004B27DA /* Build configuration list for PBXNativeTarget "EpicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F010F76205806C9004B27DA /* Debug */,
+				4F010F77205806C9004B27DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F010F96205807E0004B27DA /* Build configuration list for PBXNativeTarget "EpicAppSiriExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F010F97205807E0004B27DA /* Debug */,
+				4F010F98205807E0004B27DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F010F99205807E0004B27DA /* Build configuration list for PBXNativeTarget "EpicAppSiriExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F010F9A205807E0004B27DA /* Debug */,
+				4F010F9B205807E0004B27DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F010F59205806C9004B27DA /* Project object */;
+}

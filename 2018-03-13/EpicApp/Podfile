@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'EpicApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+pod 'SteviaLayout'
+pod 'lottie-ios'
+pod 'MaterialComponents'
+  # Pods for EpicApp
+
+
+end
+
+target 'EpicAppSiriExtension' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for EpicAppSiriExtension
+
+end
+
+target 'EpicAppSiriExtensionUI' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for EpicAppSiriExtensionUI
+
+end
