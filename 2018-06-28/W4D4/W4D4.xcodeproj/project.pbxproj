@@ -13,6 +13,8 @@
 		4F7874D820E51EEB003CC8B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7874D620E51EEB003CC8B5 /* Main.storyboard */; };
 		4F7874DA20E51EEC003CC8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7874D920E51EEC003CC8B5 /* Assets.xcassets */; };
 		4F7874DD20E51EEC003CC8B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7874DB20E51EEC003CC8B5 /* LaunchScreen.storyboard */; };
+		4F7874E520E52993003CC8B5 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7874E420E52993003CC8B5 /* Dog.swift */; };
+		4F7874E720E52A2A003CC8B5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7874E620E52A2A003CC8B5 /* Person.swift */; };
 		A16B2A6E3C4C549292C93315 /* Pods_W4D4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C7FDD13692183658DCD6B /* Pods_W4D4.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		4F7874D920E51EEC003CC8B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F7874DC20E51EEC003CC8B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F7874DE20E51EEC003CC8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7874E420E52993003CC8B5 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		4F7874E620E52A2A003CC8B5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7441CC36736221531B3EC7B3 /* Pods-W4D4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W4D4.release.xcconfig"; path = "Pods/Target Support Files/Pods-W4D4/Pods-W4D4.release.xcconfig"; sourceTree = "<group>"; };
 		E0B2A33B8BDB726F5DE1DE79 /* Pods-W4D4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-W4D4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-W4D4/Pods-W4D4.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +70,8 @@
 				4F7874D020E51EEB003CC8B5 /* AppDelegate.swift */,
 				4F7874D220E51EEB003CC8B5 /* FirstViewController.swift */,
 				4F7874D420E51EEB003CC8B5 /* SecondViewController.swift */,
+				4F7874E420E52993003CC8B5 /* Dog.swift */,
+				4F7874E620E52A2A003CC8B5 /* Person.swift */,
 				4F7874D620E51EEB003CC8B5 /* Main.storyboard */,
 				4F7874D920E51EEC003CC8B5 /* Assets.xcassets */,
 				4F7874DB20E51EEC003CC8B5 /* LaunchScreen.storyboard */,
@@ -102,6 +108,7 @@
 				4F7874C920E51EEB003CC8B5 /* Sources */,
 				4F7874CA20E51EEB003CC8B5 /* Frameworks */,
 				4F7874CB20E51EEB003CC8B5 /* Resources */,
+				AA401E961C6D74A5F44A8E01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +166,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AA401E961C6D74A5F44A8E01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-W4D4/Pods-W4D4-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-W4D4/Pods-W4D4-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F7AF651B77F3021DAED75329 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7874E720E52A2A003CC8B5 /* Person.swift in Sources */,
 				4F7874D520E51EEB003CC8B5 /* SecondViewController.swift in Sources */,
 				4F7874D120E51EEB003CC8B5 /* AppDelegate.swift in Sources */,
+				4F7874E520E52993003CC8B5 /* Dog.swift in Sources */,
 				4F7874D320E51EEB003CC8B5 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
