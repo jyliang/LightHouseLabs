@@ -51,10 +51,6 @@ class FirstViewController: UIViewController {
         collisionBehavior.translatesReferenceBoundsIntoBoundary = true
         collisionBehavior.collisionDelegate = self
         animator.addBehavior(collisionBehavior)
-        
-        
-        
-        
     }
     
     func addAttachmentBehavior() {
