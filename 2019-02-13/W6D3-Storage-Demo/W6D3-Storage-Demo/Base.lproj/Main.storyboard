@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="W6D3_Storage_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4h-wH-aCU">
+                                <rect key="frame" x="16" y="103" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tlu-Gx-FMl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auN-z4-ixc">
+                                <rect key="frame" x="151" y="166" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T3V-f6-oT5"/>
+                                    <constraint firstAttribute="width" constant="100" id="vX4-aU-iK7"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeP-S1-WGS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1b-ry-616">
+                                <rect key="frame" x="259" y="166" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RNj-sr-tB0"/>
+                                    <constraint firstAttribute="width" constant="100" id="cB7-hG-JlC"/>
+                                </constraints>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="loadTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="c9F-FU-lw8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQW-8v-UpZ">
+                                <rect key="frame" x="16" y="232" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="asg-P4-ojJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8C-Fy-q7J">
+                                <rect key="frame" x="151" y="295" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OE5-Dg-B5G"/>
+                                    <constraint firstAttribute="width" constant="100" id="zsJ-7R-GjF"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveTappedUD" destination="BYZ-38-t0r" eventType="touchUpInside" id="r14-T5-5Kp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dq-Uo-H1Z">
+                                <rect key="frame" x="259" y="295" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NCl-0C-aaJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="Niu-fO-ara"/>
+                                </constraints>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="loadTappedUD" destination="BYZ-38-t0r" eventType="touchUpInside" id="fD6-y4-0Hb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F4h-wH-aCU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="3zT-6o-kMb"/>
+                            <constraint firstItem="F4h-wH-aCU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4rn-M4-5jA"/>
+                            <constraint firstItem="t1b-ry-616" firstAttribute="top" secondItem="F4h-wH-aCU" secondAttribute="bottom" constant="33" id="WTC-fv-PP7"/>
+                            <constraint firstItem="5dq-Uo-H1Z" firstAttribute="top" secondItem="RQW-8v-UpZ" secondAttribute="bottom" constant="33" id="XIr-Vp-DH7"/>
+                            <constraint firstItem="t1b-ry-616" firstAttribute="leading" secondItem="auN-z4-ixc" secondAttribute="trailing" constant="8" id="XsF-4g-1dS"/>
+                            <constraint firstItem="auN-z4-ixc" firstAttribute="top" secondItem="F4h-wH-aCU" secondAttribute="bottom" constant="33" id="a3a-B7-kql"/>
+                            <constraint firstItem="RQW-8v-UpZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bQA-V5-mYU"/>
+                            <constraint firstItem="5dq-Uo-H1Z" firstAttribute="leading" secondItem="Z8C-Fy-q7J" secondAttribute="trailing" constant="8" id="bYk-1b-WFz"/>
+                            <constraint firstItem="Z8C-Fy-q7J" firstAttribute="top" secondItem="RQW-8v-UpZ" secondAttribute="bottom" constant="33" id="bom-MV-yAJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5dq-Uo-H1Z" secondAttribute="trailing" constant="16" id="gf3-HE-uza"/>
+                            <constraint firstItem="RQW-8v-UpZ" firstAttribute="top" secondItem="auN-z4-ixc" secondAttribute="bottom" constant="36" id="hqk-AB-bF0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t1b-ry-616" secondAttribute="trailing" constant="16" id="tnU-K9-Zsx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RQW-8v-UpZ" secondAttribute="trailing" constant="16" id="x98-id-zMb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F4h-wH-aCU" secondAttribute="trailing" constant="16" id="xj6-Fb-zB5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="F4h-wH-aCU" id="Tnw-Gz-cBZ"/>
+                        <outlet property="textFieldUD" destination="RQW-8v-UpZ" id="uuj-aO-Nr3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
