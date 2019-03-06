@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F9F9900223019F300DF3DBE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F98FF223019F300DF3DBE /* CoreMotion.framework */; };
+		4FDFE8CB222F808D0086E965 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDFE8CA222F808D0086E965 /* AppDelegate.m */; };
+		4FDFE8CE222F808D0086E965 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDFE8CD222F808D0086E965 /* ViewController.m */; };
+		4FDFE8D1222F808D0086E965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDFE8CF222F808D0086E965 /* Main.storyboard */; };
+		4FDFE8D3222F808F0086E965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDFE8D2222F808F0086E965 /* Assets.xcassets */; };
+		4FDFE8D6222F808F0086E965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDFE8D4222F808F0086E965 /* LaunchScreen.storyboard */; };
+		4FDFE8D9222F808F0086E965 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDFE8D8222F808F0086E965 /* main.m */; };
+		4FDFE8E1222F81CC0086E965 /* RainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDFE8E0222F81CC0086E965 /* RainView.m */; };
+		4FDFE8E4222F86110086E965 /* RainDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDFE8E3222F86110086E965 /* RainDropView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F9F98FF223019F300DF3DBE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4FDFE8C6222F808D0086E965 /* EmojiRain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiRain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDFE8C9222F808D0086E965 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4FDFE8CA222F808D0086E965 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FDFE8CC222F808D0086E965 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4FDFE8CD222F808D0086E965 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4FDFE8D0222F808D0086E965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FDFE8D2222F808F0086E965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FDFE8D5222F808F0086E965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FDFE8D7222F808F0086E965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDFE8D8222F808F0086E965 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FDFE8DF222F81CC0086E965 /* RainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainView.h; sourceTree = "<group>"; };
+		4FDFE8E0222F81CC0086E965 /* RainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainView.m; sourceTree = "<group>"; };
+		4FDFE8E2222F86110086E965 /* RainDropView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainDropView.h; sourceTree = "<group>"; };
+		4FDFE8E3222F86110086E965 /* RainDropView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainDropView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FDFE8C3222F808D0086E965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9F9900223019F300DF3DBE /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F9F98FE223019F200DF3DBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F9F98FF223019F300DF3DBE /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FDFE8BD222F808D0086E965 = {
+			isa = PBXGroup;
+			children = (
+				4FDFE8C8222F808D0086E965 /* EmojiRain */,
+				4FDFE8C7222F808D0086E965 /* Products */,
+				4F9F98FE223019F200DF3DBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FDFE8C7222F808D0086E965 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FDFE8C6222F808D0086E965 /* EmojiRain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FDFE8C8222F808D0086E965 /* EmojiRain */ = {
+			isa = PBXGroup;
+			children = (
+				4FDFE8C9222F808D0086E965 /* AppDelegate.h */,
+				4FDFE8CA222F808D0086E965 /* AppDelegate.m */,
+				4FDFE8CC222F808D0086E965 /* ViewController.h */,
+				4FDFE8CD222F808D0086E965 /* ViewController.m */,
+				4FDFE8DF222F81CC0086E965 /* RainView.h */,
+				4FDFE8E0222F81CC0086E965 /* RainView.m */,
+				4FDFE8E2222F86110086E965 /* RainDropView.h */,
+				4FDFE8E3222F86110086E965 /* RainDropView.m */,
+				4FDFE8CF222F808D0086E965 /* Main.storyboard */,
+				4FDFE8D2222F808F0086E965 /* Assets.xcassets */,
+				4FDFE8D4222F808F0086E965 /* LaunchScreen.storyboard */,
+				4FDFE8D7222F808F0086E965 /* Info.plist */,
+				4FDFE8D8222F808F0086E965 /* main.m */,
+			);
+			path = EmojiRain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FDFE8C5222F808D0086E965 /* EmojiRain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FDFE8DC222F808F0086E965 /* Build configuration list for PBXNativeTarget "EmojiRain" */;
+			buildPhases = (
+				4FDFE8C2222F808D0086E965 /* Sources */,
+				4FDFE8C3222F808D0086E965 /* Frameworks */,
+				4FDFE8C4222F808D0086E965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmojiRain;
+			productName = EmojiRain;
+			productReference = 4FDFE8C6222F808D0086E965 /* EmojiRain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FDFE8BE222F808D0086E965 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jason Liang";
+				TargetAttributes = {
+					4FDFE8C5222F808D0086E965 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4FDFE8C1222F808D0086E965 /* Build configuration list for PBXProject "EmojiRain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FDFE8BD222F808D0086E965;
+			productRefGroup = 4FDFE8C7222F808D0086E965 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FDFE8C5222F808D0086E965 /* EmojiRain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FDFE8C4222F808D0086E965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDFE8D6222F808F0086E965 /* LaunchScreen.storyboard in Resources */,
+				4FDFE8D3222F808F0086E965 /* Assets.xcassets in Resources */,
+				4FDFE8D1222F808D0086E965 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FDFE8C2222F808D0086E965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FDFE8CE222F808D0086E965 /* ViewController.m in Sources */,
+				4FDFE8E4222F86110086E965 /* RainDropView.m in Sources */,
+				4FDFE8D9222F808F0086E965 /* main.m in Sources */,
+				4FDFE8E1222F81CC0086E965 /* RainView.m in Sources */,
+				4FDFE8CB222F808D0086E965 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FDFE8CF222F808D0086E965 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FDFE8D0222F808D0086E965 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FDFE8D4222F808F0086E965 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FDFE8D5222F808F0086E965 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FDFE8DA222F808F0086E965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4FDFE8DB222F808F0086E965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FDFE8DD222F808F0086E965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = U36336MP79;
+				INFOPLIST_FILE = EmojiRain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonliang.EmojiRain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Development Wildcard";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FDFE8DE222F808F0086E965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EmojiRain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jasonliang.EmojiRain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FDFE8C1222F808D0086E965 /* Build configuration list for PBXProject "EmojiRain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDFE8DA222F808F0086E965 /* Debug */,
+				4FDFE8DB222F808F0086E965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FDFE8DC222F808F0086E965 /* Build configuration list for PBXNativeTarget "EmojiRain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FDFE8DD222F808F0086E965 /* Debug */,
+				4FDFE8DE222F808F0086E965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FDFE8BE222F808D0086E965 /* Project object */;
+}
